@@ -11,9 +11,9 @@ web:
         DOLI_DB_USER: root
         DOLI_DB_PASSWORD: root
         DOLI_DB_NAME: dolibarr
-        DOLI_URL_ROOT: 'http://207.180.198.227'
+        DOLI_URL_ROOT: 'http://0.0.0.0'
         PHP_INI_DATE_TIMEZONE: 'Europe/Paris'
     ports:
-        - "90:80"
+        - "80:80"
     links:
         - mariadb
