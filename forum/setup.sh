@@ -7,9 +7,9 @@ echo "Create SMF Database"
 #FLUSH PRIVILEGES;
 #EXIT;
 
-cd /tmp && wget https://download.simplemachines.org/index.php/smf_2-0-15_install.zip
+cd /tmp && wget https://download.simplemachines.org/index.php/smf_2-1-rc2_install.zip
 sudo mkdir -p /var/www/html/smf
-sudo unzip smf_2-0-15_install.zip -d /var/www/html/smf
+sudo unzip smf_2-1-rc2_install.zip -d /var/www/html/smf
 
 sudo chown -R www-data:www-data /var/www/html/smf/
 sudo chmod -R 755 /var/www/html/smf/
