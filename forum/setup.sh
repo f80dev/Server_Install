@@ -1,11 +1,12 @@
 echo "Create SMF Database"
 
-#sudo mysql -u root -p
-#CREATE DATABASE smf;
-#CREATE USER 'smfuser'@'localhost' IDENTIFIED BY 'hh';
-#GRANT ALL ON smf.* TO 'smfuser'@'localhost' IDENTIFIED BY 'hh' WITH GRANT OPTION;
-#FLUSH PRIVILEGES;
-#EXIT;
+sudo mysql -u root -p
+DROP DATABASE smf;
+CREATE DATABASE smf;
+CREATE USER 'smfuser'@'localhost' IDENTIFIED BY 'hh4271';
+GRANT ALL ON smf.* TO 'smfuser'@'localhost' IDENTIFIED BY 'hh4271' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+EXIT;
 
 cd /tmp && wget https://download.simplemachines.org/index.php/smf_2-1-rc2_install.zip
 sudo mkdir -p /var/www/html/smf
